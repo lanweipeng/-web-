@@ -1,4 +1,4 @@
-# project1
+# animate
 
 > A Vue.js project
 
@@ -28,25 +28,3 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
-基于手脚架多安装了
-
-less less-loader bootstrap@3
-
-./build/webpack.base.conf.js
-```
-alias: {
-       'bootstrap/dist/css/bootstrap.min.css'
-}
-```
-./config/index.js
-
-26line
-
-开发阶段
-
-useEslint: false,
-
-上线前
-
-useEslint: true,
