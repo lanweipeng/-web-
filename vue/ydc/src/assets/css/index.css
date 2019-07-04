@@ -1,0 +1,75 @@
+.ydc-pane {
+    background-color: #fff;
+    display: none;
+    padding: 20px 0;
+}
+
+.ydc-pane p {
+    padding: 15px 15px 0 10px;
+}
+
+.ydc-pane h4 {
+    padding: 15px 15px 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ydc-pane-list li a {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    float: left;
+}
+
+.ydc-pane-list li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.ydc-pane-list li:hover {
+    background: #e6e6e6;
+}
+
+.ydc-pane-list li a:hover {
+    color: #ff6565;
+}
+
+.ydc-pane-list li a i {
+    color: #ff0000;
+    font-style: oblique;
+}
+
+.ydc-pane-list li span {
+    float: right;
+    color: #999;
+}
+
+.ydc-tabPanel ul {
+    height: 44px;
+    border-bottom: 1px solid #d0d0d0;
+    background: #eaeaea;
+    line-height: 44px;
+}
+
+.ydc-tabPanel ul li {
+    float: left;
+    margin: 0 2px 0 0;
+    font-size: 14px;
+    height: 44px;
+    line-height: 45px;
+    width: 111px;
+    text-align: center;
+    cursor: pointer;
+    background: -moz-linear-gradient(top, #eee, #ddd);
+}
+
+.ydc-tabPanel .hit {
+    border-bottom: 2px solid #ff5f5f;
+    cursor: pointer;
+    color: #ffffff;
+    background: #ff5f5f;
+    background: -moz-linear-gradient(top, #e1e1e1, #fff);
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
