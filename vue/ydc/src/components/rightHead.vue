@@ -26,7 +26,7 @@
 										</a>
 									</dl>
 								</div>
-								<button class="btn ydc-ne-carousel" onclick="javascript:window.location.href='release.html';">
+								<button class="btn ydc-ne-carousel" @click="$router.push({name:'release',params:{}})"">
 									<i class="ydc-icon-shu"></i>
 									<span>发布</span>
 								</button>

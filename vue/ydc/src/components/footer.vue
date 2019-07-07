@@ -6,7 +6,8 @@
 		</footer>
 </template>
 <script>
-export default {name:'footer'};
+export default {
+  };
 </script>
 <style lang="css" scoped>
 .ydc-footer {
