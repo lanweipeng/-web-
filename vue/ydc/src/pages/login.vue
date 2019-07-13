@@ -9,7 +9,7 @@
 		<div class="ydc-body-login">
 			<h2>登录</h2>
 			<div class="ydc-body-login-content">
-				<form action="">
+				<form ref="form" :action="SERVER+'api/login'" method='post'>
 					<div class="ydc-body-login-box">
 						<div class="ydc-user-img">
 							<div class="ydc-user-img-img"><img src="../assets/images/icon/ph.png" alt=""></div>
@@ -39,11 +39,11 @@
 						</div>
 					</div>
 					<div class="ydc-body-submit">
-						<a href="info.html">登录</a>
+						<a  @click="login()">登录</a>
 					</div>
 					<div class="ydc-login-box">
 
-						<a href="go-reg.html" target="_blank">立即注册</a>
+                        <router-link :to="{ name: 'reg', params: {} } ">立即注册</router-link>
 						<span>|</span>
 						<a href="customer.html" target="_blank">常见问题</a>
 
@@ -62,8 +62,34 @@
 </template>
 <script>
 import Footer from '@/components/footer'
+import {SERVER} from '@/config'
+import {fetch_form} from '@/lib/fetch'
 export default {
   name:'login',
+  data(){
+      return{
+          SERVER
+      }
+  },
+  methods:{
+async login(){
+    let form =this.$refs['form']
+    let json = await fetch_form(form)
+    // let formData= new FormData(form)
+    // let res = await fetch(form.action,{
+    //     method:form.method,
+    //     body:formData
+    // })
+    // let json = await res.json();
+    if(json.err){
+        alert(json.msg);
+    }else{
+        alert('su')
+        localStorage.token=json.token;
+        this.$router.push('/index')
+    }
+}
+  },
   components:{
     Footer
   }
