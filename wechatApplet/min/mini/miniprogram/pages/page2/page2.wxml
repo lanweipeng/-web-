@@ -1,0 +1,10 @@
+<!--miniprogram/pages/page2/page2.wxml-->
+<view>
+<button bindtap="fn">按钮</button>
+<button bindtap="toast">吐司</button>
+<button bindtap="btn3">3</button>
+<button bindtap="share">分享</button>
+<button bindtap="login">分享</button>
+<button bindtap="scan">扫码</button>
+</view>
+

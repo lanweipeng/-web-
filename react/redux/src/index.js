@@ -4,29 +4,13 @@ import './index.css';
 import App from './App';
 
 import * as serviceWorker from './serviceWorker';
-import {createStore} from 'redux'
-import {Provider} from 'react-redux'
-//创建存储
-function reducer1(state={name:'lwp',age:18},action){
-    switch(action.type){
-        case 'set_name':
-            let newState={
-                ...state,
-                name:action.name
-            } 
-            return newState;
-        default:
-            return state
-    }
-    return state
-}
-// 创建存储对象
-const store = createStore(reducer1)
+import { Provider } from 'react-redux'
+import store from './store'
 
 ReactDOM.render(
 <Provider store={store}>
 
-<App name="hw"/>
+<App />
 
 </Provider>, document.getElementById('root'));
 
