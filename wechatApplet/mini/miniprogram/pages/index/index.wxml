@@ -1,0 +1,46 @@
+<view>
+  <view>姓名：{{name}}</view>
+  <view>年龄：{{age}}</view>
+  <view wx:if="{{b}}">d</view>
+  <!-- type:wain form-type='submit'-->
+  <button bind:tap="fn" size="mini" type="primary">显示隐藏</button>
+  <input type="text" bindinput="input" value="{{val}}"/>
+  <button bindtap="add">增加</button>
+  <view wx:for="{{arr}}" wx:key="{{index}}">{{item}}</view>
+  <!-- 轮播 -->
+  <swiper>
+    <view>1</view>
+    <view>2</view>
+    <view>3</view>
+  </swiper>
+  <radio-group>
+    <radio>男</radio>
+    <radio>女</radio>
+  </radio-group>
+  <checkbox-group>
+    <checkbox>1</checkbox>
+    <checkbox>2</checkbox>
+  </checkbox-group>
+  <slider></slider>
+  音量
+  <picker range="{{citys}}" bindchange="selectedChange">
+  选择:<view>{{citys[selectedIndex]}}</view>
+  </picker>
+  <picker mode="data">
+  选择:<view></view>
+  </picker>
+  <picker mode="region">
+  选择:<view></view>
+  </picker>
+  <navigator url="../page2/page2">下一页</navigator>
+  <scroll-view>
+  <view>1</view>
+  <view>1</view>
+  <view>1</view>
+  <view>1</view>
+  <view>1</view>
+  <view>1</view>
+  <view>1</view>
+  <view>1</view>
+  </scroll-view>
+</view>

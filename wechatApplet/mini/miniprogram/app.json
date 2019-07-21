@@ -1,0 +1,42 @@
+{
+  "cloud":true,
+  "pages": [
+    
+    "pages/page3/page3",
+    "pages/index/index",
+    "pages/page2/page2"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "随便",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/page3/page3",
+        "text": "3"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "1"
+      },
+      {
+        "pagePath": "pages/page2/page2",
+        "text": "2"
+      },
+      
+      {
+        "pagePath": "pages/page2/page2",
+        "text": "2"
+      },
+      {
+        "pagePath": "pages/page2/page2",
+        "text": "2"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap75.json"
+}

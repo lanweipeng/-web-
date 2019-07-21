@@ -1,0 +1,5 @@
+<!--miniprogram/pages/page3/page3.wxml-->
+<view>
+a+b:{{res}}
+<button bindtap="add">add</button>
+</view>
